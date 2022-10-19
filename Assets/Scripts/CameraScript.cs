@@ -28,7 +28,7 @@ public class CameraScript : MonoBehaviour
         XRotation -= mouseY;
         YRotation += mouseX;
 
-        XRotation = Mathf.Clamp(XRotation, -90f, 85f);
+        XRotation = Mathf.Clamp(XRotation, -90f, 80f);
 
         transform.rotation = Quaternion.Euler(XRotation, YRotation, 0);
         orientation.rotation = Quaternion.Euler(0, YRotation, 0);
